@@ -1,0 +1,31 @@
+<div class="newsPage">
+
+    <div class="pageContent">
+
+
+
+        <div class="card" *ngFor="let d of data | paginate: { id:'listing', itemsPerPage: 4, currentPage: page,totalItems:totalRecords }" (click)="OpenLink(d)">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="../../assets/images/pic11.jpg" class="img1">
+                </div>
+                <div class="col-sm-10">
+                    <div class="card-body">
+                        <h5 class="card-title">{{d.title}}</h5>
+                        <p class="card-text">{{d.summary}}</p>
+                        <p class="time"> {{d.published}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="footer">
+        <pagination-controls id="listing" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+    </div>
+
+    <div class="winodw">
+        {{link}}
+    </div>

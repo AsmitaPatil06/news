@@ -1,0 +1,29 @@
+.feedbackForm {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .2rem;
+}
+
+#Address {
+    width: 500px;
+    height: 100px;
+}
+
+.form-control {
+    width: 300px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    background-color: hsl(158deg 50% 57%);
+    color: white;
+}

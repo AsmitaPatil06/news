@@ -1,0 +1,98 @@
+<div class="background-body"></div>
+
+<div class="news-container">
+    <div class="News-page">
+
+        <div class="sidebarSection">
+
+
+
+            <div class="card" style="width: 15rem; margin-top: 40px;">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../../assets/images/pic12.jpg" class="img1">
+                    </div>
+                    <div class="card-body" class="col-sm-9">
+                        <h5 class="card-title">Hii Reader,</h5>
+                        Here's your news!
+                    </div>
+
+                </div>
+            </div>
+            <div class="card" *ngIf="!show" style="width: 15rem; height: 96px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">View Toggle</h5>
+                    <div class="icon-box" style="margin-top: 9px;">
+                        <button>  <i style="font-size: 2rem;" class="bi bi-filter-square"></i></button>
+                        <button>  <i style="font-size: 2rem;" class="bi bi-list-ul"></i></button>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Have a Feedback?</h5>
+                    <button type="button" (click)="toggle()" [routerLink]="['feed']" class="btn">We're Listening!</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="pageSection ">
+            <router-outlet></router-outlet>
+            <!-- <app-new-page></app-new-page> -->
+
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid">
+
+    <div class="News-page">
+
+
+        <div class="sidebarSection">
+
+
+            sffd -->
+
+<!-- <div class="card" style="width: 15rem;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="../../assets/images/pic12.jpg" class="img1">
+                        </div>
+                        <div class="card-body" class="col-sm-8">
+                            <h5 class="card-title">Hii Reader</h5>
+                            Here's your news!
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">View Toggle</h5>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                          </label>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Have a Feedback?</h5>
+                        <button type="button" (click)="Feedback()" class="btn">We're Listening!</button>
+                    </div>
+                </div> -->
+
+<!-- </div>
+
+
+<div class="pageSection ">
+    
+asmi
+</div>
+</div>
+</div> -->
